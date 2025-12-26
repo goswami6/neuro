@@ -14,6 +14,7 @@ import BlogPage from './client/Pages/BlogPage';
 import FormulationsPage from './client/Pages/FormulationsPage';
 import TherapyDetails from './client/Pages/TherapyDetails';
 import WhatsAppButton from './client/components/WhatsAppButton';
+import ScrollToTop from './client/components/ScrollToTop';
 
 
 
@@ -22,7 +23,8 @@ const App = () => {
     <Router>
       <TopBar />
       <Navbar />
-      <WhatsAppButton />
+      <ScrollToTop />
+      
       
       <main className="min-h-screen">
         <Routes>
@@ -43,6 +45,7 @@ const App = () => {
       </main>
 
       <Footer />
+      <WhatsAppButton />
     </Router>
   );
 };
