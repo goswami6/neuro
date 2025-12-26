@@ -7,7 +7,7 @@ const FormulationsPage = () => {
   const formulations = [
     {
       id: 1,
-      name: "SOMA Neuro-Regen",
+      name: "Siddhi Vinayak Hospital Neuro-Regen",
       tagline: "Cognitive Enhancement & Nerve Repair",
       image: "https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&q=80&w=800", // Image of scientific/brain health context
       color: "border-[#76B9D0]",
@@ -43,7 +43,7 @@ const FormulationsPage = () => {
     },
      {
       id: 4,
-      name: "SOMA Neuro-Regen",
+      name: "Siddhi Vinayak Hospital Neuro-Regen",
       tagline: "Cognitive Enhancement & Nerve Repair",
       image: "https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&q=80&w=800", // Image of scientific/brain health context
       color: "border-[#76B9D0]",
@@ -134,7 +134,7 @@ const FormulationsPage = () => {
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-[#0F172A] mb-6">The SOMA Compounding Standard</h2>
+              <h2 className="text-3xl font-bold text-[#0F172A] mb-6">The Siddhi Vinayak Hospital Compounding Standard</h2>
               <ul className="space-y-6">
                 {[
                   { title: "U.S.P. Grade Ingredients", desc: "Pharmaceutical grade raw materials for all formulations." },
@@ -225,7 +225,7 @@ const FormulationsPage = () => {
 
               <div className="mt-12 p-6 bg-slate-50 rounded-xl border-l-4 border-[#76B9D0]">
                 <p className="text-xs text-slate-500 italic">
-                  Note: Formulations are compounded at SOMA Wellness Clinic and require clinical oversight.
+                  Note: Formulations are compounded at Siddhi Vinayak Hospital and require clinical oversight.
                 </p>
               </div>
             </div>

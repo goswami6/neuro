@@ -9,8 +9,9 @@ const ContactPage = () => {
         <div className="max-w-7xl mx-auto px-6">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Get in Touch</h1>
           <p className="text-slate-400 max-w-xl mx-auto">
-            Have questions about our regenerative therapies? Our team at SOMA is here to guide you toward optimal vitality.
+            Have questions about spine, joint, orthopaedic or trauma care? Our medical team is here to guide you with the right diagnosis, treatment options, and compassionate support.
           </p>
+
         </div>
       </section>
 
@@ -78,15 +79,16 @@ const ContactPage = () => {
           <div className="bg-slate-100 rounded-2xl overflow-hidden h-[400px] shadow-inner relative">
             {/* Embedded Google Map */}
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.558341648074!2d72.8386072752044!3d19.025309353147424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce40d31d96c3%3A0x341ce6266a787efb!2sSOMA%20Wellness%20Clinic!5e0!3m2!1sen!2sin!4v1715600000000!5m2!1sen!2sin"
+              src="https://www.google.com/maps?q=Shri%20Siddhi%20Vinayak%20Hospital%20NH%2029%20Mau%20Uttar%20Pradesh%20275101&output=embed"
               width="100%"
               height="100%"
               style={{ border: 0 }}
               allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="SOMA Wellness Clinic Location"
+              title="Shri Siddhi Vinayak Hospital, Mau"
             ></iframe>
+
           </div>
           <div className="p-6 border-2 border-[#76B9D0]/20 rounded-2xl">
             <h3 className="font-bold text-xl mb-3 flex items-center gap-2 text-[#0F172A]">

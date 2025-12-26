@@ -173,7 +173,7 @@ const HomePage = () => {
 
               <div className="relative z-0 rounded-2xl overflow-hidden shadow-2xl border-b-8 border-[#F38B4C]">
                 <img
-                  src="https://www.drrajputorthocentre.com/images/services/12.webp"
+                  src="/owner.jpeg"
                   alt="Dr. Mitra Basu Chhillar"
                   className="w-full h-auto object-cover"
                 />
@@ -181,68 +181,99 @@ const HomePage = () => {
 
               {/* Experience Badge */}
               <div className="absolute -bottom-6 -right-6 bg-[#1A2634] text-white p-6 rounded-xl shadow-xl hidden md:block">
-                <p className="text-3xl font-bold text-[#76B9D0]">30+</p>
+                <p className="text-3xl font-bold text-[#76B9D0]">15+</p>
                 <p className="text-xs uppercase tracking-widest">Years of Experience</p>
               </div>
             </div>
 
             {/* Content Side */}
             <div className="w-full lg:w-1/2 space-y-6">
+
+              {/* Heading Section */}
               <div className="space-y-2">
                 <span className="text-[#76B9D0] font-bold tracking-[0.2em] text-sm uppercase">
-                  Expert Medical Leadership
+                  Expert Orthopaedic & Spine Care
                 </span>
+
                 <h2 className="text-4xl md:text-5xl font-bold text-[#1A2634] leading-tight">
-                  Dr. Mitra Basu Chhillar
+                  Dr. Arun Kumar Gupta
                 </h2>
+
                 <p className="text-[#F38B4C] font-semibold text-lg">
-                  M.D., M.B.A.(Healthcare), F.A.M.
+                  M.B.B.S., M.S., D.N.B., M.N.A.M.S., M.Ch.
                 </p>
               </div>
 
+              {/* Divider */}
               <div className="h-1 w-20 bg-[#76B9D0]"></div>
 
+              {/* Description */}
               <p className="text-gray-700 leading-relaxed text-lg">
-                Dr. Mitra Basu Chhillar is the distinguished Medical Director at **Neuro Spine & Joint Solutions**, renowned for his research and clinical expertise. With over 30 years of experience, he has significantly contributed to medical science with over 55 articles in top-tier journals and authoring six books.
+                Dr. Arun Kumar Gupta is a highly experienced Orthopaedic, Spine & Joint Specialist,
+                currently practicing at <strong>Shri Siddhi Vinayak Hospital</strong>.
+                With advanced national and international fellowships, he specializes in
+                complex spine surgeries, joint disorders, trauma care, and minimally invasive
+                endoscopic spine procedures.
               </p>
 
+              {/* Highlights Grid */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4">
-                <div className="flex items-start space-x-3">
-                  <div className="mt-1 bg-[#E1F1F6] p-1 rounded-full">
-                    <svg className="w-4 h-4 text-[#76B9D0]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"></path></svg>
+
+                {[
+                  "Fellowship in Russian Ilizarov Technique",
+                  "Fellowship in Rheumatology",
+                  "Fellowship in Endoscopic Spine Surgery",
+                  "Advanced Spine & Joint Replacement Care",
+                  "Ex-Resident – Safdarjung Hospital, New Delhi",
+                  "Ex-Resident – LLRM Medical College, Meerut",
+                ].map((item, index) => (
+                  <div key={index} className="flex items-start space-x-3">
+                    <div className="mt-1 bg-[#E1F1F6] p-1 rounded-full">
+                      <svg
+                        className="w-4 h-4 text-[#76B9D0]"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="3"
+                          d="M5 13l4 4L19 7"
+                        />
+                      </svg>
+                    </div>
+                    <p className="text-sm font-medium text-gray-800">{item}</p>
                   </div>
-                  <p className="text-sm font-medium text-gray-800">Gold Commander Certified (UK)</p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <div className="mt-1 bg-[#E1F1F6] p-1 rounded-full">
-                    <svg className="w-4 h-4 text-[#76B9D0]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"></path></svg>
-                  </div>
-                  <p className="text-sm font-medium text-gray-800">Regenerative Medicine Specialist</p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <div className="mt-1 bg-[#E1F1F6] p-1 rounded-full">
-                    <svg className="w-4 h-4 text-[#76B9D0]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"></path></svg>
-                  </div>
-                  <p className="text-sm font-medium text-gray-800">Patented Medical Innovations</p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <div className="mt-1 bg-[#E1F1F6] p-1 rounded-full">
-                    <svg className="w-4 h-4 text-[#76B9D0]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"></path></svg>
-                  </div>
-                  <p className="text-sm font-medium text-gray-800">Six Sigma Quality Management</p>
-                </div>
+                ))}
+
               </div>
 
+              {/* CTA */}
               <div className="pt-6">
                 <a
                   href="/about-us"
                   className="inline-flex items-center group text-[#1A2634] font-bold text-sm uppercase tracking-widest border-b-2 border-[#F38B4C] pb-2 hover:text-[#76B9D0] transition-all"
                 >
-                  Read Full Biography
-                  <svg className="ml-2 w-4 h-4 transform group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                  Read Full Profile
+                  <svg
+                    className="ml-2 w-4 h-4 transform group-hover:translate-x-2 transition-transform"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
+                  </svg>
                 </a>
               </div>
+
             </div>
+
           </div>
         </div>
       </section>

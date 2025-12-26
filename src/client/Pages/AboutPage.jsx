@@ -33,52 +33,57 @@ const AboutPage = () => {
 
   const accomplishments = [
     {
-      title: "Medicine & Science Achievements",
+      title: "Clinical Expertise & Specialization",
       icon: <Microscope size={20} />,
       content: [
-        "Over 55 research articles in top-tier medical journals.",
-        "Reversing chronic diseases including diabetes, fatty liver, and hypertension using non-pharmacological measures.",
-        "High-end research in neurodegenerative disorders (Parkinson’s and Alzheimer’s).",
-        "Author of six books and numerous book chapters.",
-        "In-depth research on stress, lifestyle, and radiation exposure in extreme conditions."
+        "15+ years of experience in orthopaedic, spine and joint care.",
+        "Specialized in spine disorders, joint problems and trauma-related injuries.",
+        "Extensive experience in fracture management and musculoskeletal conditions.",
+        "Focus on accurate diagnosis and evidence-based treatment planning.",
+        "Committed to long-term recovery and functional rehabilitation."
       ]
     },
     {
-      title: "Academic & Professional Honors",
+      title: "Education & Advanced Training",
       icon: <Award size={20} />,
       content: [
-        "Holds several medical technology patents.",
-        "Gold Commander from the Multi-agency (Strategic) CBRN Command Course, Ryton, UK.",
-        "Certified Six Sigma Quality Manager.",
-        "Panelist on Lok Sabha TV program 'Healthy India'.",
-        "Expert faculty for the National Disaster Management Authority."
+        "M.B.B.S., M.S., D.N.B., M.N.A.M.S., M.Ch.",
+        "Fellowship in Russian Ilizarov Technique.",
+        "Fellowship in Rheumatology.",
+        "Fellowship in Endoscopic Spine Surgery.",
+        "Trained in advanced and minimally invasive spine procedures."
       ]
     },
     {
-      title: "Innovations & Telemedicine",
+      title: "Institutional Experience & Patient Care",
       icon: <BookOpen size={20} />,
       content: [
-        "Best Paper Award: Association of Physicians of India.",
-        "Commended by the Government of India for developing a Cardio Risk Analyser.",
-        "DRDO Technology Group Award for high-end successful telemedicine establishment.",
-        "DRDO Award for managing coronary risk factors in large populations."
+        "Ex-Resident, Safdarjung Hospital, New Delhi.",
+        "Ex-Resident, LLRM Medical College, Meerut.",
+        "Ex-Resident, VIMS Gajraula and Raipur.",
+        "Strong experience in trauma care and emergency orthopaedics.",
+        "Patient-first approach with ethical and transparent medical practice."
       ]
     }
   ];
+
+
   return (
     <div className="bg-white font-sans text-slate-800">
 
       {/* 1. Hero Section */}
       <section className="relative bg-[#0F172A] py-20 lg:py-32 overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-            Pioneering the Future of <span className="text-[#76B9D0]">Vitality</span>
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+            Advanced Care for <span className="text-[#76B9D0]">Spine, Brain & Joints</span>
           </h1>
-          <p className="max-w-2xl mx-auto text-slate-400 text-lg md:text-xl leading-relaxed">
-            SOMA Wellness Clinic is Mumbai's premier center for regenerative medicine,
-            blending advanced clinical science with a holistic approach to human health.
+
+          <p className="max-w-3xl mx-auto text-slate-300 text-lg md:text-xl leading-relaxed">
+            Siddhi Vinayak Hospital is a trusted center for orthopaedic, spine, neuro and trauma care,
+            delivering evidence-based treatments with modern surgical expertise and compassionate patient care.
           </p>
         </div>
+
         {/* Subtle Background Pattern */}
         <div className="absolute inset-0 opacity-10 pointer-events-none">
           <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-slate-700 via-transparent to-transparent"></div>
@@ -89,34 +94,52 @@ const AboutPage = () => {
       <section className="py-20 max-w-7xl mx-auto px-6 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
-            <span className="text-[#F38B4C] font-bold uppercase tracking-widest text-sm">Our Philosophy</span>
+            <span className="text-[#F38B4C] font-bold uppercase tracking-widest text-sm">
+              Our Philosophy
+            </span>
+
             <h2 className="text-3xl md:text-4xl font-bold mt-4 mb-6 text-slate-900">
-              Moving Beyond Symptom Management to Total Cellular Optimization.
+              Treating the Root Cause for Long-Term Recovery & Mobility.
             </h2>
+
             <p className="text-slate-600 mb-6 leading-relaxed">
-              At SOMA, we believe that the body possesses an incredible inherent ability to heal. Our role is to provide the precise biological keys—through Ozone, IV Therapy, and Regenerative Bio-science—to unlock that potential.
+              At Siddhi Vinayak Hospital, we believe that effective treatment goes beyond
+              temporary pain relief. Our approach focuses on accurate diagnosis, advanced
+              medical intervention, and comprehensive rehabilitation to restore mobility,
+              function, and quality of life for every patient.
             </p>
+
             <div className="space-y-4">
+              {/* Mission */}
               <div className="flex gap-4 items-start">
                 <div className="bg-[#76B9D0]/10 p-2 rounded-lg text-[#76B9D0]">
                   <Target size={24} />
                 </div>
                 <div>
                   <h4 className="font-bold">Our Mission</h4>
-                  <p className="text-sm text-slate-500">To extend the human health-span through evidence-based innovative therapies.</p>
+                  <p className="text-sm text-slate-500">
+                    To deliver ethical, evidence-based neuro, spine, orthopaedic and trauma
+                    care using modern medical technology and experienced clinical expertise.
+                  </p>
                 </div>
               </div>
+
+              {/* Patient Care */}
               <div className="flex gap-4 items-start">
                 <div className="bg-[#F38B4C]/10 p-2 rounded-lg text-[#F38B4C]">
                   <ShieldCheck size={24} />
                 </div>
                 <div>
-                  <h4 className="font-bold">Patient-Centric Care</h4>
-                  <p className="text-sm text-slate-500">Every protocol is customized to the unique genetic and lifestyle profile of the individual.</p>
+                  <h4 className="font-bold">Patient-First Care</h4>
+                  <p className="text-sm text-slate-500">
+                    Every treatment plan is personalized, ensuring safety, transparency,
+                    and the best possible outcome for each patient.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
+
 
           <div className="relative">
             <img
@@ -142,12 +165,12 @@ const AboutPage = () => {
               <div className="relative">
                 <div className="absolute -top-4 -left-4 w-full h-full border-2 border-[#76B9D0] rounded-2xl"></div>
                 <img
-                  src="https://somawellnessclinic.com/wp-content/uploads/elementor/thumbs/web.whatsapp-34-2-r2zc7r0ea2fxx8ocisftv0ymdzs8y7cixhadca2se8.jpg"
+                  src="/owner.jpeg"
                   alt="Dr. Mitra Basu Chhillar"
                   className="relative z-10 rounded-2xl shadow-2xl w-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
                 />
                 <div className="absolute -bottom-6 -right-6 bg-[#F38B4C] p-6 rounded-xl z-20 hidden md:block">
-                  <p className="text-white font-bold text-xl text-center">30+ Years</p>
+                  <p className="text-white font-bold text-xl text-center">15+ Years</p>
                   <p className="text-white/80 text-xs uppercase tracking-widest text-center">Experience</p>
                 </div>
               </div>
@@ -156,15 +179,25 @@ const AboutPage = () => {
             {/* Right Side: Content */}
             <div className="w-full lg:w-7/12">
               <div className="mb-8">
-                <span className="text-[#76B9D0] font-bold uppercase tracking-widest text-sm">Medical Director, SOMA</span>
-                <h2 className="text-4xl font-bold text-slate-900 mt-2 mb-1">Dr. Mitra Basu Chhillar</h2>
-                <p className="text-[#F38B4C] font-semibold text-lg mb-6">M.D., M.B.A. (Healthcare), F.A.M.</p>
+                <span className="text-[#76B9D0] font-bold uppercase tracking-widest text-sm">
+                  Senior Orthopaedic & Spine Consultant
+                </span>
+
+                <h2 className="text-4xl font-bold text-slate-900 mt-2 mb-1">
+                  Dr. Arun Kumar Gupta
+                </h2>
+
+                <p className="text-[#F38B4C] font-semibold text-lg mb-6">
+                  M.B.B.S., M.S., D.N.B., M.N.A.M.S., M.Ch.
+                </p>
 
                 <p className="text-slate-600 leading-relaxed mb-8">
-                  Dr. Mitra Basu Chhillar is a distinguished scientist and clinician renowned for his research
-                  expertise spanning three decades in regenerative, preventive, and curative medicine.
-                  He has dedicated his career to developing insights into the causation and reversal
-                  of disease and biological ageing.
+                  Dr. Arun Kumar Gupta is a highly experienced Orthopaedic, Spine and Joint
+                  Specialist with over <strong>15+ years of clinical experience</strong>.
+                  He has been trained at prestigious institutions across India and has
+                  completed advanced fellowships in spine surgery, rheumatology and
+                  complex orthopaedic care. His approach focuses on accurate diagnosis,
+                  evidence-based treatment and long-term patient recovery.
                 </p>
               </div>
 
@@ -174,7 +207,8 @@ const AboutPage = () => {
                   <div key={index} className="border border-slate-200 rounded-xl overflow-hidden">
                     <button
                       onClick={() => toggleTab(index)}
-                      className={`w-full flex items-center justify-between p-5 text-left transition-colors ${openTab === index ? 'bg-slate-50' : 'bg-white hover:bg-slate-50'}`}
+                      className={`w-full flex items-center justify-between p-5 text-left transition-colors ${openTab === index ? 'bg-slate-50' : 'bg-white hover:bg-slate-50'
+                        }`}
                     >
                       <div className="flex items-center gap-4">
                         <span className={openTab === index ? 'text-[#F38B4C]' : 'text-slate-400'}>
@@ -202,6 +236,7 @@ const AboutPage = () => {
               </div>
             </div>
 
+
           </div>
         </div>
       </section>
@@ -210,7 +245,7 @@ const AboutPage = () => {
       <section className="bg-slate-50 py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold mb-4">Why Choose SOMA?</h2>
+            <h2 className="text-3xl font-bold mb-4">Why Choose Siddhi Vinayak Hospital?</h2>
             <div className="w-20 h-1 bg-[#F38B4C] mx-auto"></div>
           </div>
 

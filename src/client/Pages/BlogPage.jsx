@@ -3,7 +3,7 @@ import { Calendar, User, ArrowRight, Search, X } from 'lucide-react'; // Added X
 
 // Dummy Full Content (replace with your actual blog content)
 const dummyFullContent = `
-  <p class="text-lg leading-relaxed mb-6">At SOMA, we are at the forefront of understanding how the human body can achieve optimal health and extend its vitality. Ozone therapy, a key component of our regenerative protocols, utilizes medical-grade ozone gas to stimulate the body’s innate healing mechanisms.</p>
+  <p class="text-lg leading-relaxed mb-6">At Siddhi Vinayak Hospital, we are at the forefront of understanding how the human body can achieve optimal health and extend its vitality. Ozone therapy, a key component of our regenerative protocols, utilizes medical-grade ozone gas to stimulate the body’s innate healing mechanisms.</p>
   <h3 class="text-2xl font-bold text-slate-900 mb-4">The Science Behind Ozone</h3>
   <p class="mb-4 leading-relaxed">Ozone (O3) is a powerful molecule with unique therapeutic properties. When administered correctly, it acts as a mild, transient oxidative stressor, prompting the body to ramp up its antioxidant defenses. This process is crucial for combating chronic inflammation and oxidative damage, which are root causes of many degenerative diseases.</p>
   <ul class="list-disc list-inside space-y-2 mb-6 text-slate-700">
@@ -41,7 +41,7 @@ const posts = [
     id: 2,
     title: "The Role of Stem Cells in Chronic Pain Management",
     excerpt: "Moving beyond temporary relief: how regenerative science is changing the landscape of chronic back and joint pain...",
-    author: "SOMA Editorial",
+    author: "Siddhi Vinayak Hospital Editorial",
     date: "Nov 05, 2023",
     category: "Regenerative",
     image: "https://images.unsplash.com/photo-1530026405186-ed1f139313f8?auto=format&fit=crop&q=80&w=800",
@@ -70,7 +70,7 @@ const BlogPage = () => {
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-8">
             <div>
               <span className="text-[#F38B4C] font-bold uppercase tracking-[0.2em] text-xs">Knowledge Base</span>
-              <h1 className="text-4xl md:text-5xl font-bold text-[#0F172A] mt-2">SOMA Insights</h1>
+              <h1 className="text-4xl md:text-5xl font-bold text-[#0F172A] mt-2">Siddhi Vinayak Hospital</h1>
             </div>
             <div className="relative w-full md:w-96">
               <input

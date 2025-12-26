@@ -48,7 +48,7 @@ const CoreValues = () => {
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
           <div className="max-w-2xl">
-            <span className="text-[#76B9D0] font-bold tracking-widest uppercase text-sm">The Foundation of SOMA</span>
+            <span className="text-[#76B9D0] font-bold tracking-widest uppercase text-sm">The Foundation of Siddhi Vinayak Hospital</span>
             <h2 className="text-4xl font-bold text-[#1A2634] mt-2">Our Core Values</h2>
           </div>
           <p className="text-gray-500 max-w-sm border-l-4 border-[#F38B4C] pl-4 italic">

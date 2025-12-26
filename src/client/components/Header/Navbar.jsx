@@ -58,7 +58,7 @@ const Navbar = () => {
               <Link to="/" className="flex items-center">
                 <img
                   src="/logo.png"   // 👈 put your logo path here
-                  alt="SOMA Neuro Spine & Joint"
+                  alt="Siddhi Vinayak Hospital"
                   className="h-10 md:h-12 w-auto object-contain"
                 />
               </Link>
@@ -128,7 +128,7 @@ const Navbar = () => {
           <div className="flex justify-between items-center mb-10">
             <img
               src="/logo.png"
-              alt="SOMA Wellness Clinic"
+              alt="Siddhi Vinayak Hospital"
               className="h-10 md:h-12 w-auto object-contain"
             />
             <button onClick={() => setMobileMenuOpen(false)} className="p-2 bg-slate-100 rounded-full">

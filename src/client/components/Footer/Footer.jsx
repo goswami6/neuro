@@ -54,7 +54,7 @@ const Footer = () => {
           <div className="space-y-6 lg:col-span-1">
             <img
               src="/footer.png"
-              alt="SOMA Wellness Clinic"
+              alt="Siddhi Vinayak Hospital"
               className="h-12 w-auto object-contain"
             />
 
