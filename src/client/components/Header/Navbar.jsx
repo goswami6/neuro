@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronDown, Menu, X, ChevronRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isSticky, setIsSticky] = useState(false);
@@ -28,7 +29,6 @@ const Navbar = () => {
     { name: 'About Us', href: '/about-us' },
     {
       name: 'Our Therapies',
-      href: '#',
       submenu: [
         { name: 'Ozone Therapy', href: '/therapy/ozone-therapy' },
         { name: 'Chronic Disease Segments', href: '/therapy/chronic-disease-segments' },
@@ -55,13 +55,13 @@ const Navbar = () => {
 
             {/* 1. Logo */}
             <div className="flex-shrink-0">
-              <a href="/" className="flex items-center">
+              <Link to="/" className="flex items-center">
                 <img
                   src="/logo.png"   // 👈 put your logo path here
                   alt="SOMA Neuro Spine & Joint"
                   className="h-10 md:h-12 w-auto object-contain"
                 />
-              </a>
+              </Link>
             </div>
 
 
@@ -69,24 +69,24 @@ const Navbar = () => {
             <div className="hidden lg:flex items-center space-x-2">
               {navLinks.map((link) => (
                 <div key={link.name} className="relative group">
-                  <a
-                    href={link.href}
+                  <Link
+                    to={link.href}
                     className="px-4 py-2 text-[14px] font-bold text-[#0F172A] hover:text-[#76B9D0] flex items-center transition-colors tracking-wide"
                   >
                     {link.name}
                     {link.submenu && <ChevronDown size={14} className="ml-1 group-hover:rotate-180 transition-transform" />}
-                  </a>
+                  </Link>
 
                   {link.submenu && (
                     <div className="absolute left-0 mt-2 w-72 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 bg-white shadow-2xl border-b-4 border-[#76B9D0] py-3 rounded-b-xl">
                       {link.submenu.map((item) => (
-                        <a
+                        <Link
                           key={item.href}              // ✅ unique key
-                          href={item.href}             // ✅ real link
+                          to={item.href}             // ✅ real link
                           className="block px-6 py-2.5 text-sm text-slate-600 hover:bg-slate-50 hover:text-[#76B9D0] font-medium"
                         >
                           {item.name}
-                        </a>
+                        </Link>
                       ))}
 
                     </div>
@@ -97,12 +97,12 @@ const Navbar = () => {
 
             {/* 3. Action Button & Mobile Toggle */}
             <div className="flex items-center gap-4">
-              <a
-                href="/schedule"
+              <Link
+                to="/schedule"
                 className="hidden sm:block bg-[#F38B4C] hover:bg-[#0F172A] text-white text-[11px] font-black tracking-widest px-6 py-3.5 rounded-full transition-all shadow-md active:scale-95"
               >
                 BOOK APPOINTMENT
-              </a>
+              </Link>
 
               <button
                 className="lg:hidden p-2 text-[#0F172A] bg-slate-100 rounded-lg"
@@ -151,21 +151,21 @@ const Navbar = () => {
                       </button>
                       <div className={`pl-4 space-y-2 overflow-hidden transition-all duration-300 ${mobileSubmenuOpen ? 'max-h-[500px] mb-4' : 'max-h-0'}`}>
                         {link.submenu.map((item) => (
-                          <a
+                          <Link
                             key={item.href}
-                            href={item.href}
+                            to={item.href}
                             className="block py-2 text-slate-500 font-medium text-sm hover:text-[#76B9D0]"
                           >
                             {item.name}
-                          </a>
+                          </Link>
                         ))}
 
                       </div>
                     </div>
                   ) : (
-                    <a href={link.href} className="block py-4 text-[#0F172A] font-bold text-lg">
+                    <Link to={link.href} className="block py-4 text-[#0F172A] font-bold text-lg">
                       {link.name}
-                    </a>
+                    </Link>
                   )}
                 </div>
               ))}
@@ -173,9 +173,9 @@ const Navbar = () => {
           </div>
 
           <div className="mt-auto pt-6 border-t border-slate-100">
-            <a href="/schedule" className="w-full block text-center bg-[#F38B4C] text-white font-black text-sm tracking-widest py-4 rounded-xl shadow-lg shadow-orange-200">
+            <Link to="/schedule" className="w-full block text-center bg-[#F38B4C] text-white font-black text-sm tracking-widest py-4 rounded-xl shadow-lg shadow-orange-200">
               BOOK APPOINTMENT
-            </a>
+            </Link>
           </div>
         </div>
       </div>
